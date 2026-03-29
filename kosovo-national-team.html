@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Kosova në Finale - Rrugë drejt Kupës së Botës">
+    <meta property="og:description" content="Ku ishe ti kur Kosova ishte një hap nga historia? Bashkohu me ne në këtë rrugëtim emocionues! 🇽🇰⚽">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_Kosovo.svg/1200px-Flag_of_Kosovo.svg.png">
+    <meta property="og:url" content="https://fatlind-jashari.github.io/kosovo-national-team.html">
+    <meta property="og:type" content="website">
+    <title>Kombëtarja e Kosovës - Rrugë drejt Kupës së Botës</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #0033A0, #FFFFFF, #FFCC00);
+            color: #0033A0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            padding: 50px;
+            background: rgba(255, 204, 0, 0.8);
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            animation: slideIn 1s;
+        }
+        .player {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background: #FFCC00;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .player:hover {
+            transform: scale(1.05);
+        }
+        .player img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .moments {
+            background: #0033A0;
+            color: white;
+        }
+        .moments ul {
+            list-style: none;
+            padding: 0;
+        }
+        .moments li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .story {
+            background: #FFFFFF;
+            color: #0033A0;
+            padding: 20px;
+        }
+        .chapter {
+            display: none;
+            text-align: center;
+        }
+        .chapter.active {
+            display: block;
+        }
+        .chapter img {
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .quiz {
+            text-align: left;
+            max-width: 600px;
+            margin: auto;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        button {
+            background: #0033A0;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #FFCC00;
+            color: #0033A0;
+        }
+        .challenge {
+            background: #FFCC00;
+            padding: 20px;
+        }
+        .score {
+            font-size: 24px;
+            color: #0033A0;
+        }
+        footer {
+            padding: 20px;
+            background: #0033A0;
+            color: white;
+            animation: fadeIn 2s;
+        }
+        audio {
+            margin: 20px;
+        }
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            color: white;
+            font-size: 36px;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        #overlay p {
+            margin: 20px;
+        }
+        #overlay button {
+            background: #FFCC00;
+            color: #0033A0;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .typewriter {
+            overflow: hidden;
+            border-right: .15em solid #FFCC00;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #FFCC00; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rrugëtimi i Kosovës drejt Kupës së Botës</h1>
+        <p class="typewriter">Nga fillimet e vështira, me sakrifica dhe besim të patundur, Kombëtarja e Kosovës ka arritur në finalen e Play-Off. Ky është momenti për të ndjerë krenarinë kombëtare dhe për të besuar në ëndrrën e madhe! Çdo gol, çdo fitore, është një hap drejt lirisë dhe unitetit. Tifozë, zemrat tona rrahin së bashku!</p>
+        <div style="display: flex; justify-content: center; align-items: center; margin: 20px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_Kosovo.svg/200px-Flag_of_Kosovo.svg.png" alt="Flamuri i Kosovës" style="width:150px; margin-right: 20px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Albania.svg/200px-Flag_of_Albania.svg.png" alt="Flamuri i Shqipërisë" style="width:150px;">
+        </div>
+        <audio controls id="epic-music">
+            <source src="epic-music.mp3" type="audio/mpeg">
+            Muzikë epike (shtoni një file audio)
+        </audio>
+        <br>
+        <button onclick="playHymn()">Luaj Himnin: Forca Djelmosha</button>
+        <audio id="hymn" preload="none">
+            <source src="forca-djelmosha.mp3" type="audio/mpeg">
+            Himni i Shqipërisë (shtoni file audio)
+        </audio>
+    </header>
+
+    <section id="moments" class="moments">
+        <h2>Momente Historike që Na Lidhin</h2>
+        <ul>
+            <li><strong>5 mars 2014:</strong> Ndeshja e parë ndërkombëtare kundër Haitit – fillimi i ëndrrës.</li>
+            <li><strong>2016:</strong> Fitorja e parë kundër Finlandës – momenti që ndryshoi gjithçka.</li>
+            <li><strong>Euro 2024:</strong> Për herë të parë në një turne të madh – krenaria jonë!</li>
+            <li><strong>Finalja e Play-Off:</strong> Ky është momenti ynë – besoni dhe luftoni!</li>
+        </ul>
+    </section>
+
+    <section id="story" class="story">
+        <h2>Rruga drejt Historisë: Shpresa, Sakrifica dhe Besimi</h2>
+        <div id="story-content">
+            <div class="chapter active" id="chapter1">
+                <img src="https://example.com/kids-playing-football.jpg" alt="Fëmijë duke luajtur futboll" style="width:300px; height:200px;">
+                <h3>Kapitulli 1: Fillimet e Vështira</h3>
+                <p>Në rrugët e Kosovës, fëmijët luanin futboll me topa të vjetër, ëndërronin për një ditë kur Kosova do të ishte në skenën ndërkombëtare. Sakrifica e tyre dhe e familjeve ishte themeli i shpresës.</p>
+            </div>
+            <div class="chapter" id="chapter2">
+                <img src="https://example.com/fans-with-flags.jpg" alt="Tifozë me flamuj" style="width:300px; height:200px;">
+                <h3>Kapitulli 2: Sakrifica dhe Lufta</h3>
+                <p>Tifozët me flamuj në duar, qëndruan në shi dhe shi, duke mbështetur ekipin edhe në momentet më të vështira. Çdo humbje ishte një mësim, çdo fitore një triumf i sakrificës.</p>
+            </div>
+            <div class="chapter" id="chapter3">
+                <img src="https://example.com/victory-moment.jpg" alt="Momenti i fitores" style="width:300px; height:200px;">
+                <h3>Kapitulli 3: Besimi dhe Shpresa</h3>
+                <p>Me besim të patundur, Kosova arriti në finale. Ky është momenti i shpresës – për fëmijët që luajnë sot, për tifozët që besuan gjithmonë.</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <button onclick="prevChapter()">Mbrapa</button>
+            <button onclick="nextChapter()">Para</button>
+        </div>
+    </section>
+
+    <section id="players">
+        <h2>Lojtarët e Herojtë</h2>
+        <div class="player">
+            <img src="https://example.com/vedat-muriqi.jpg" alt="Vedat Muriqi">
+            <h3>Vedat Muriqi</h3>
+            <p>Golashënuesi kryesor, me gola vendimtarë në rrugëtimin e Kosovës. "Çdo gol për Kosovën është një premtim për të ardhmen!"</p>
+        </div>
+        <div class="player">
+            <img src="https://example.com/milot-rashica.jpg" alt="Milot Rashica">
+            <h3>Milot Rashica</h3>
+            <p>Mesfushori kreativ, që ka sjellë magji në fushë. "Luftimi ynë është për lirinë dhe ëndrrat tona."</p>
+        </div>
+        <div class="player">
+            <img src="https://example.com/amir-rrahmani.jpg" alt="Amir Rrahmani">
+            <h3>Amir Rrahmani</h3>
+            <p>Mbrojtësi i fortë, simbol i qëndresës dhe krenarisë. "Kosova është zemra ime, dhe do të luftoj deri në fund!"</p>
+        </div>
+    </section>
+
+    <section id="quiz" class="quiz">
+        <h2>Quiz Interaktiv: Sa e Njeh Kombëtaren?</h2>
+        <div id="quiz-container">
+            <!-- Pyetjet do të shtohen me JS -->
+        </div>
+        <button id="start-quiz">Fillo Quiz-in</button>
+        <div id="result" style="display:none;">
+            <p id="score"></p>
+            <p id="message"></p>
+        </div>
+    </section>
+
+    <section id="challenge" class="challenge">
+        <h2>Sfida: Shëno Golat!</h2>
+        <p>Kliko mbi lojtarët për të "shënuar gola" dhe fituar pikë!</p>
+        <div id="players-challenge">
+            <button class="player-btn" data-player="Muriqi">Vedat Muriqi</button>
+            <button class="player-btn" data-player="Rashica">Milot Rashica</button>
+            <button class="player-btn" data-player="Rrahmani">Amir Rrahmani</button>
+        </div>
+        <p class="score">Pikë: <span id="points">0</span></p>
+        <p id="badge" style="display:none;">Badge: Super Tifoz!</p>
+    </section>
+
+    <footer>
+        <h2>Mesazh Motivues</h2>
+        <p>Tifozë të dashur, ky është momenti për unitet! Le të mbështesim Kombëtaren tonë me zemër dhe shpirt. Kosova është e fortë, Kosova është e lirë, dhe së bashku do të arrijmë ëndrrën e Kupës së Botës. Besoni dhe luftoni!</p>
+    </footer>
+
+    <section id="social-share" style="background: #0033A0; color: white; padding: 20px; text-align: center;">
+        <h2>Ndaje Momentin Historik!</h2>
+        <p>Shpërnda këtë eksperiencë digjitale në rrjete sociale dhe trego krenarinë tënde për Kosovën. #KosovaNeFinale #KupaBotës</p>
+        <button onclick="shareOnSocial()">Ndaje në Facebook/Instagram</button>
+        <p style="margin-top: 20px; font-size: 14px;">Për postim: "Ku ishe ti kur Kosova ishte një hap nga historia? Bashkohu me ne në këtë rrugëtim emocionues! 🇽🇰⚽"</p>
+    </section>
+
+    <div style="text-align: center; padding: 10px; background: #FFCC00; color: #0033A0; font-size: 12px;">
+         E punuar nga Fatlind Jashari
+    </div>
+
+    <div id="overlay">
+        <div>
+            <p>Ku ishe ti kur Kosova ishte një hap nga historia?</p>
+            <button onclick="closeOverlay()">Vazhdo</button>
+        </div>
+    </div>
+
+    <script>
+        // Quiz Data
+        const questions = [
+            { question: "Kush është golashënuesi kryesor i Kosovës?", answers: ["Vedat Muriqi", "Milot Rashica", "Amir Rrahmani"], correct: 0 },
+            { question: "Sa gola ka shënuar Kosova në kualifikime?", answers: ["10", "15", "20"], correct: 1 },
+            { question: "Në cilin vit u pranua Kosova në FIFA?", answers: ["2016", "2018", "2020"], correct: 0 },
+            { question: "Kush është trajneri aktual?", answers: ["Franco Foda", "Alain Giresse", "Bernard Challandes"], correct: 2 },
+            { question: "Sa ndeshje ka fituar Kosova në historinë e saj?", answers: ["5", "10", "15"], correct: 1 }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        document.getElementById('start-quiz').addEventListener('click', startQuiz);
+
+        function startQuiz() {
+            document.getElementById('quiz-container').innerHTML = '';
+            currentQuestion = 0;
+            score = 0;
+            showQuestion();
+        }
+
+        function showQuestion() {
+            if (currentQuestion >= questions.length) {
+                showResult();
+                return;
+            }
+            const q = questions[currentQuestion];
+            const div = document.createElement('div');
+            div.className = 'question';
+            div.innerHTML = `<p>${q.question}</p>`;
+            q.answers.forEach((answer, index) => {
+                const btn = document.createElement('button');
+                btn.textContent = answer;
+                btn.addEventListener('click', () => checkAnswer(index));
+                div.appendChild(btn);
+            });
+            document.getElementById('quiz-container').appendChild(div);
+        }
+
+        function checkAnswer(index) {
+            if (index === questions[currentQuestion].correct) {
+                score++;
+                alert('Saktë!');
+            } else {
+                alert('Gabim!');
+            }
+            currentQuestion++;
+            showQuestion();
+        }
+
+        function showResult() {
+            document.getElementById('score').textContent = `Rezultati: ${score}/${questions.length}`;
+            let message = '';
+            if (score >= 4) message = 'Super Tifoz!';
+            else if (score >= 2) message = 'Ekspert i Kosovës!';
+            else message = 'Mëso më shumë!';
+            document.getElementById('message').textContent = message;
+            document.getElementById('result').style.display = 'block';
+        }
+
+        // Challenge
+        let points = 0;
+        document.querySelectorAll('.player-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                points++;
+                document.getElementById('points').textContent = points;
+                btn.style.animation = 'bounce 0.5s';
+                setTimeout(() => btn.style.animation = '', 500);
+                if (points >= 10) {
+                    document.getElementById('badge').style.display = 'block';
+                }
+            });
+        });
+
+        // Play Hymn
+        function playHymn() {
+            const hymn = document.getElementById('hymn');
+            hymn.play();
+        }
+
+        // Overlay
+        setTimeout(() => {
+            document.getElementById('overlay').style.display = 'flex';
+        }, 3000);
+
+        function closeOverlay() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        // Share on Social
+        function shareOnSocial() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Kosova në Finale!',
+                    text: 'Ku ishe ti kur Kosova ishte një hap nga historia?',
+                    url: window.location.href
+                });
+            } else {
+                alert('Ndaje këtë link: ' + window.location.href);
+            }
+        }
+
+        // Story Navigation
+        let currentChapter = 0;
+        const chapters = document.querySelectorAll('.chapter');
+
+        function showChapter(index) {
+            chapters.forEach(ch => ch.classList.remove('active'));
+            chapters[index].classList.add('active');
+        }
+
+        function nextChapter() {
+            currentChapter = (currentChapter + 1) % chapters.length;
+            showChapter(currentChapter);
+        }
+
+        function prevChapter() {
+            currentChapter = (currentChapter - 1 + chapters.length) % chapters.length;
+            showChapter(currentChapter);
+        }
+    </script>
+</body>
+</html>
